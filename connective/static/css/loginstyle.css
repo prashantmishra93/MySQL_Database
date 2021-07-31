@@ -56,7 +56,7 @@ header .link {
 }
 
 .highway {
-    height: 200px;
+    height: 130px;
     width: 400%;
     display: block;
     background-image: url('/static/img/road.jpg');
@@ -75,10 +75,10 @@ header .link {
 }
 
 .city {
-    height: 250px;
+    height: 200px;
     width: 400%;
     position: absolute;
-    bottom: 200px;
+    bottom: 130px;
     left: 0;
     right: 0;
     display: block;
@@ -96,7 +96,7 @@ header .link {
 .car {
     width: 400px;
     left: 70%;
-    bottom: 100px;
+    bottom: 70px;
     transform: translateX(-50%);
     position: absolute;
     z-index: 2;
@@ -120,7 +120,7 @@ header .link {
 
 .wheel {
     left: 70%;
-    bottom: 178px;
+    bottom: 148px;
     transform: translateX(-50%);
     position: absolute;
     z-index: 2;
@@ -151,7 +151,7 @@ header .link {
 .car1 {
     width: 400px;
     left: 25%;
-    bottom: 40px;
+    bottom: 20px;
     transform: translateX(-50%);
     position: absolute;
     z-index: 2;
@@ -164,7 +164,7 @@ header .link {
 
 .wheel1 {
     left: 25%;
-    bottom: 118px;
+    bottom: 98px;
     transform: translateX(-50%);
     position: absolute;
     z-index: 2;
@@ -220,12 +220,12 @@ header .link {
     border: double 2px linear-gradient(to right, #4458dc 0%, lightblue 100%);
     background-image: linear-gradient(to right, #4458dc 0%, lightblue 100%);
     border-radius: 20% 70% 70% 15% / 40% 40% 90% 90%;
-    padding: 35px;
+    padding: 30px;
 }
 
 .form .text-box {
     color: green;
-    padding: 5px;
+    padding: 3px;
     margin: 0px 10px;
     border: double 2px lightyellow;
     background-color: lightyellow;
@@ -245,13 +245,14 @@ header .link {
     margin-bottom: -50px;
     border-radius: 10px;
     display: inline-block;
+    cursor: pointer;
     border: double 2px transparent;
     letter-spacing: 0;
     color: #e80202;     /* it is a black color code */
     background-image: linear-gradient(to right, lightgreen 0%, violet 100%);
 }
 
-.form .btn:hover {
+.btn:hover {
     border: double 2px #4458dc;
     color: #222;
     background-image: none;
