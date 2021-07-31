@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .forms import FormAddContactForm
 from .models import ContactForm
 from django.contrib import messages
@@ -6,6 +6,10 @@ from django.contrib import messages
 # Create your views here.
 
 def Contactform(request):
+    form = FormAddContactForm()
+    data = {
+        'form': form
+    }
     if request.method == 'POST':
         form = FormAddContactForm(request.POST)
         if form.is_valid():
@@ -16,26 +20,22 @@ def Contactform(request):
             re_password = request.POST['re_password']
 
             if ContactForm.objects.filter(name=name).exists():
-                ctx = {'error':'name must be different'}
-                return render(request, 'contact.html', ctx)
+                messages.error(request, "Name must be different")
 
             elif ContactForm.objects.filter(email=email).exists():
-                ctx1 = {'error1':'email must be different'}
-                return render(request, 'contact.html', ctx1)
+                messages.error(request, "Email must be different")
 
             elif ContactForm.objects.filter(contact=contact).exists():
-                ctx2 = {'error2':'contact must be different'}
-                return render(request, 'contact.html', ctx2)
+                messages.error(request, "Contact must be different")
 
             elif password != re_password:
-                ctx2 = {'form': form, 'error3': ' both password must be same '}
-                return render(request, 'contact.html', ctx2)
+                messages.error(request, "Password must be same")
 
             else:
                 form.save()
                 return render(request, 'success.html')
 
-    return render(request, 'contact.html')
+    return render(request, 'contact.html', {'form':data})
 
 def success(request):
     employees = ContactForm.objects.all()
@@ -61,3 +61,8 @@ def logout(request):
 def show(request):
     employees = ContactForm.objects.all()
     return render(request, 'show.html', {'employees':employees})
+
+def destroy(request, id):
+    employee = ContactForm.objects.get(id=id)
+    employee.delete()
+    return redirect('/show')
