@@ -1,0 +1,1004 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background: linear-gradient(to bottom right, white, #bcbdc4);
+    height: 4000px;
+}
+
+p1 {
+    color: #1b6192;
+    font-family: verdana;
+    font-size: 15px;
+}
+
+p2 {
+    color: #865353;
+    font-family: verdana;
+    font-size: 15px;
+}
+
+p3 {
+    color: #1b6192;
+    font-family: verdana;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+p4 {
+    color: #868383;
+    font-family: verdana;
+    font-size: 10px;
+}
+
+p6 {
+    color: #1b6192;
+    font-family: verdana;
+    font-size: 15px;
+    word-spacing: 10px;
+}
+
+p7 {
+    color: #868383;
+    font-family: verdana;
+    font-size: 15px;
+}
+
+#commentprof {
+    top: 560px;
+    left: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+#commentboxpos2 {
+    top: 560px;
+    left: 45px;
+    width: 500px;
+    height: 30px;
+}
+
+#commentbox {
+    width: 540px;
+    height: 30px;
+}
+
+/* header bar CSS start here */
+.header1 {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: #142170;
+    top: 0;
+    left: 0;
+    z-index: 7;
+}
+.header1 #logo {
+    left: 100px;
+    height: 55px;
+    top: 5px;
+}
+.header1 #logo h1 {
+    color: white;
+    padding-top: 13px;
+}
+
+#searchbox {
+    width: 450px;
+    height: 22px;
+    background: #fff;
+    padding: 5px;
+    outline: none;
+    border-radius: 20px/20px;
+    background-position: 465px;
+    background-repeat: no-repeat;
+    font-size: 18px;
+    word-spacing: 2px;
+}
+#searcharea {
+    top: 17px;
+    left: 240px;
+    height: 40px;
+}
+
+#profilearea {
+    top: 15px;
+    left: 780px;
+    height: 40px;
+}
+#profilepic {
+    height: 35px;
+}
+
+#profilearea1 {
+    top: 20px;
+    left: 950px;
+    height: 20px;
+    font-size: 20px;
+    font-family: verdana;
+}
+#profilearea1 a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#profilearea2 {
+    top: 10px;
+    left: 1020px;
+    height: 30px;
+    font-size: 28px;
+    color: #fff;
+    font-family: verdana;
+}
+
+#homearea {
+    top: 20px;
+    left: 1040px;
+    height: 20px;
+    font-size: 20px;
+    font-family: verdana;
+}
+#homearea a {
+    text-decoration: none;
+    color: #fff;
+}
+
+#friendarea {
+    top: 15px;
+    left: 1140px;
+    height: 40px;
+}
+#friendpic {
+    height: 35px;
+}
+
+#chatarea {
+    top: 15px;
+    left: 1190px;
+    height: 40px;
+}
+#chatpic {
+    height: 35px;
+}
+
+#bellarea {
+    top: 15px;
+    left: 1240px;
+    height: 40px;
+}
+#bellpic {
+    height: 35px;
+}
+
+#setarea2 {
+    top: 10px;
+    left: 1283px;
+    height: 30px;
+    font-size: 30px;
+    color: #fff;
+    font-family: verdana;
+}
+
+#setarea {
+    top: 15px;
+    left: 1303px;
+    height: 40px;
+}
+#setpic {
+    height: 35px;
+}
+
+#logoutarea {
+    top: 15px;
+    left: 1363px;
+    height: 40px;
+}
+#logpic {
+    height: 35px;
+}
+
+#resetarea {
+    top: 15px;
+    left: 1423px;
+    height: 40px;
+}
+#resetpic {
+    height: 35px;
+}
+
+/* header bar CSS end here */
+
+/* side bar CSS start here */
+
+.bodyn {
+    top: 61px;
+    left: 20px;
+    position: absolute;
+    width: 220px;
+    height: 740px;
+    background-color: lightblue;
+    font-family: verdana;
+}
+
+#side1 {
+    top: 3px;
+    left: 10px;
+    width: 180px;
+    height: 20px;
+    font-size: 20px;
+    color: #868383;
+}
+#side1:hover {background: #e9f0f2}
+#profpic {
+    height: 35px;
+}
+
+#side2 {
+    top: 47px;
+    left: 10px;
+    width: 180px;
+    height: 15px;
+    font-size: 15px;
+    color: #363030;
+}
+
+#side3 {
+    top: 65px;
+    left: 10px;
+    width: 160px;
+    height: 25px;
+    font-size: 15px;
+    color: #363030;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+#side3:hover {background: #e9f0f2}
+
+#side3 a {
+    text-decoration: none;
+}
+
+#side4 {
+    top: 90px;
+    left: 10px;
+    width: 160px;
+    height: 15px;
+    font-size: 15px;
+    color: #363030;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+#side4:hover {background: #e9f0f2}
+
+#side5 {
+    top: 115px;
+    left: 10px;
+    width: 160px;
+    height: 15px;
+    font-size: 15px;
+    color: #363030;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+#side5:hover {background: #e9f0f2}
+
+#side6 {
+    top: 155px;
+    left: 10px;
+    width: 180px;
+    height: 15px;
+    font-size: 18px;
+    color: #868383;
+    padding-top: 5px;
+}
+#side6:hover {background: #e9f0f2}
+
+#side7 {
+    top: 183px;
+    left: 10px;
+    width: 160px;
+    height: 15px;
+    font-size: 15px;
+    color: #363030;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+#side7:hover {background: #e9f0f2}
+
+#side8 {
+    top: 210px;
+    left: 10px;
+    width: 160px;
+    height: 15px;
+    font-size: 15px;
+    color: #363030;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+#side8:hover {background: #e9f0f2}
+
+#side9 {
+    top: 240px;
+    left: 10px;
+    width: 160px;
+    height: 15px;
+    font-size: 15px;
+    color: #363030;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+#side9:hover {background: #e9f0f2}
+
+#side10 {
+    top: 270px;
+    left: 10px;
+    width: 160px;
+    height: 15px;
+    font-size: 15px;
+    color: #363030;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+#side10:hover {background: #e9f0f2}
+
+#side11 {
+    top: 310px;
+    left: 10px;
+    width: 180px;
+    height: 15px;
+    font-size: 15px;
+    color: #868383;
+    padding-top: 5px;
+}
+#side11:hover {background: #e9f0f2}
+
+#side12 {
+    top: 335px;
+    left: 10px;
+    width: 160px;
+    height: 15px;
+    font-size: 15px;
+    color: #363030;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+#side12:hover {background: #e9f0f2}
+
+#side13 {
+    top: 365px;
+    left: 10px;
+    width: 160px;
+    height: 15px;
+    font-size: 15px;
+    color: #363030;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+#side13:hover {background: #e9f0f2}
+
+#side14 {
+    top: 395px;
+    left: 10px;
+    width: 180px;
+    height: 15px;
+    font-size: 15px;
+    color: #868383;
+    padding-top: 5px;
+}
+#side14:hover {background: #e9f0f2}
+
+#side15 {
+    top: 420px;
+    left: 10px;
+    width: 160px;
+    height: 15px;
+    font-size: 15px;
+    color: #363030;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+#side15:hover {background: #e9f0f2}
+
+#side16 {
+    top: 455px;
+    left: 10px;
+    width: 160px;
+    height: 15px;
+    font-size: 15px;
+    color: #363030;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+#side16:hover {background: #e9f0f2}
+
+#side17 {
+    top: 490px;
+    left: 10px;
+    width: 160px;
+    height: 15px;
+    font-size: 15px;
+    color: #363030;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+#side17:hover {background: #e9f0f2}
+
+#side18 {
+    top: 520px;
+    left: 10px;
+    width: 180px;
+    height: 15px;
+    font-size: 15px;
+    color: #868383;
+    padding-top: 5px;
+}
+#side18:hover {background: #e9f0f2}
+
+#side19 {
+    top: 545px;
+    left: 10px;
+    width: 160px;
+    height: 15px;
+    font-size: 15px;
+    color: #363030;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+#side19:hover {background: #e9f0f2}
+
+#side20 {
+    top: 580px;
+    left: 10px;
+    width: 160px;
+    height: 15px;
+    font-size: 15px;
+    color: #363030;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+#side20:hover {background: #e9f0f2}
+
+#side21 {
+    top: 610px;
+    left: 10px;
+    width: 180px;
+    height: 15px;
+    font-size: 15px;
+    color: #868383;
+    padding-top: 5px;
+}
+#side21:hover {background: #e9f0f2}
+
+#side22 {
+    top: 640px;
+    left: 10px;
+    width: 160px;
+    height: 15px;
+    font-size: 15px;
+    color: #363030;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+#side22:hover {background: #e9f0f2}
+
+#side23 {
+    top: 670px;
+    left: 10px;
+    width: 180px;
+    height: 15px;
+    font-size: 15px;
+    color: #868383;
+    padding-top: 5px;
+}
+#side23:hover {background: #e9f0f2}
+
+#side24 {
+    top: 705px;
+    left: 10px;
+    width: 160px;
+    height: 15px;
+    font-size: 15px;
+    color: #363030;
+    padding-top: 5px;
+    padding-left: 20px;
+}
+#side24:hover {background: #e9f0f2}
+
+/* side bar CSS end here */
+
+/* post bar CSS start here */
+
+.post00 {
+    top: 70px;
+    height: 320;
+    left: 245px;
+    position: absolute;
+    -webkit-box-shadow: 0 3px 8px grb(0, 0, 0, .25);
+}
+
+.post10 {
+    top: 390px;
+    left: 245px;
+    -webkit-box-shadow: 0 3px 8px grb(0, 0, 0, .25);
+    position: absolute;
+    background: #fff;
+    width: 580px;
+    height: 600px;
+    border-radius: 3px/3px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.post20 {
+    top: 1010px;
+    left: 245px;
+    -webkit-box-shadow: 0 3px 8px grb(0, 0, 0, .25);
+    position: absolute;
+    background: #fff;
+    width: 580px;
+    height: 600px;
+    border-radius: 3px/3px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.post30 {
+    top: 1630px;
+    left: 245px;
+    -webkit-box-shadow: 0 3px 8px grb(0, 0, 0, .25);
+    position: absolute;
+    background: #fff;
+    width: 580px;
+    height: 600px;
+    border-radius: 3px/3px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.post40 {
+    top: 2250px;
+    left: 245px;
+    -webkit-box-shadow: 0 3px 8px grb(0, 0, 0, .25);
+    position: absolute;
+    background: #fff;
+    width: 580px;
+    height: 600px;
+    border-radius: 3px/3px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.post50 {
+    top: 2870px;
+    left: 245px;
+    -webkit-box-shadow: 0 3px 8px grb(0, 0, 0, .25);
+    position: absolute;
+    background: #fff;
+    width: 580px;
+    height: 600px;
+    border-radius: 3px/3px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.header0001 {
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    background: #142170;
+    top: 0;
+    left: 0;
+    color: #fff;
+    z-index: 6;
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+}
+
+.sidebox00 {
+    position: absolute;
+    width: 220px;
+    height: 570px;
+    top: 70px;
+    left: 850px;
+    font-family: verdana;
+    color: #363030;
+    font-size: 15px;
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+}
+
+.sidebox02 {
+    position: absolute;
+    width: 220px;
+    height: 460px;
+    top: 650px;
+    left: 850px;
+    font-family: verdana;
+    color: #363030;
+    font-size: 15px;
+    -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, .25);
+}
+
+.post {
+    top: 70px;
+    left: 245px;
+    position: absolute;
+    width: 600px;
+    height: 300px;
+}
+
+#column-1 {
+    top: 0px;
+    left: 0px;
+    background: #fff;
+    width: 580px;
+    height: 300px;
+    border-radius: 3px/3px;
+    font-family: verdana;
+    color: #1b6192;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#postpos {
+    top: 220px;
+    left: 270px;
+    width: 185px;
+    height: 80px;
+}
+
+#postboxpos {
+    top: 45px;
+    left: 10px;
+    width: 580px;
+    height: 165px;
+    z-index: 5;
+}
+
+#postbox {
+    width: 580px;
+    height: 165px;
+    outline: none;
+    border: #fff;
+    background: #e9f0f2;
+    border-radius: 5px/5px;
+}
+
+/* paragraph CSS */
+
+post1 {
+    top: 390px;
+    left: 240px;
+    position: absolute;
+    background: #fff;
+    width: 580px;
+    height: 600px;
+    border-radius: 3px/3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+#profpic2 {
+    height: 30px;
+}
+
+#profpic3 {
+    height: 30px;
+}
+
+#post2text {
+    top: 0px;
+    left: 40px;
+    padding-top: 10px;
+    height: 40px;
+    width: 400px;
+}
+
+.post2 {
+    top: 1010px;
+    left: 240px;
+    background: #fff;
+    position: absolute;
+    width: 580px;
+    height: 600px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px/3px;
+}
+
+.post3 {
+    top: 1630px;
+    left: 240px;
+    background: #fff;
+    position: absolute;
+    width: 580px;
+    height: 600px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px/3px;
+}
+
+.post4 {
+    top: 2250px;
+    left: 240px;
+    background: #fff;
+    position: absolute;
+    width: 580px;
+    height: 600px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px/3px;
+}
+
+.post5 {
+    top: 2870px;
+    left: 240px;
+    background: #fff;
+    position: absolute;
+    width: 580px;
+    height: 600px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 3px/3px;
+}
+
+.sidebox {
+    top: 70px;
+    left: 850px;
+    width: 220px;
+    height: 570px;
+    position: absolute;
+    font-family: verdana;
+    color: #363030;
+    font-size: 15px;
+}
+
+#sidebox1 {
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 550px;
+    background: #fff;
+    border-radius: 3px/3px;
+    padding: 10px;
+}
+
+#sideboxx1 {
+    left: 0px;
+    width: 180px;
+    height: 20px;
+    font-size: 20px;
+    color: #868383;
+}
+
+#sideboxx2 {
+    left: 0px;
+    width: 180px;
+    height: 20px;
+    font-size: 20px;
+    color: #868383;
+}
+
+#sideboxx3 {
+    left: 0px;
+    width: 180px;
+    height: 20px;
+    font-size: 20px;
+    color: #868383;
+}
+
+#sideboxx4 {
+    left: 0px;
+    width: 180px;
+    height: 20px;
+    font-size: 20px;
+    color: #868383;
+}
+
+#post1pos {
+    text-decoration: none;
+    top: 500px;
+    left: 80px;
+    width: 100px;
+    height: 30px;
+}
+
+#buttonpost1 {
+    width: 100px;
+    height: 30px;
+    font-size: 15px;
+    border-radius: 4px/4px;
+    color: #fff;
+    background: #142170;
+    outline: none;
+}
+
+.sideboxxx2 {
+    top: 650px;
+    left: 850px;
+    width: 220px;
+    height: 460px;
+    position: absolute;
+    font-family: verdana;
+    color: #363030;
+    font-size: 15px;
+}
+
+#sidebox2 {
+    top: 0px;
+    left: 0px;
+    width: 200px;
+    height: 440px;
+    background: #fff:
+    border-radius: 3px/3px;
+    padding: 10px;
+}
+
+
+/* Popup CSS start */
+.popup-body {
+    top: 70px;
+    left: 1085px;
+    position: absolute;
+    width: 800px;
+    height: 210px;
+    z-index: 1;
+}
+
+section{
+    max-width: 800px;
+    margin: auto;
+    padding: 0 1rem;
+}
+.chat-btn{
+    position: fixed;
+    right:20px;
+    bottom: 10px;
+    background: dodgerblue;
+    color: white;
+    width:60px;
+    height: 60px;
+    border-radius: 50%;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.4);
+}
+
+.chat-btn:hover, .submit:hover, #emoji-btn:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
+.chat-popup{
+    position: fixed;
+    bottom:80px;
+    right:120px;
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0.75rem;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+
+.show{
+    display: flex;
+}
+
+.chat-area{
+    height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.income-msg{
+    display: flex;
+    align-items: center;
+}
+
+.avatar{
+    width:45px;
+    height: 45px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.income-msg .msg{
+    background-color: dodgerblue;
+    color: white;
+    padding:0.5rem;
+    border-radius: 25px;
+    margin-left: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+.badge{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    color:white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top:-10px;
+    right: -10px;
+}
+
+.input-area{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+input[type="text"]{
+    width:100%;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    border-radius: 5px;
+    height: 2.2rem;
+}
+
+#emoji-btn{
+    position: absolute;
+    font-size: 1.2rem;
+    background: transparent;
+    right: 50px;
+    top:2px;
+    opacity:0.5;
+}
+
+.submit{
+    padding: 0.25rem 0.5rem;
+    margin-left: 0.5rem;
+    background-color: green;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    opacity: 0.7;
+}
+
+
+.out-msg{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.my-msg{
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.75rem;
+    padding: 0.5rem;
+    background-color: #ddd;
+    border-radius: 25px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    word-break: break-all;
+}
+
+
+@media (max-width:500px){
+
+    .chat-popup{
+        bottom: 120px;
+        right:10%;
+        width: 80vw;
+    }
+}
+/* Popup CSS end */

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logbook</title>
+
+    <!-- favicon start -->
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'img/favicon/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'img/favicon/site.webmanifest' %}">
+    <link rel="mask-icon" href="{% static 'img/favicon/safari-pinned-tab.svg' %}" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- favicon end -->
+</head>
+<body>
+    <form method="POST">
+        {% csrf_token %}
+        <hr/>
+
+<!-- Start Login Profile Page -->
+        {% if request.session.email %}
+        <head>
+            {% load static %}
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css">
+            <link href="{% static '/css/logstyle.css'%}" rel="stylesheet" type="text/css">
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="cCnaQCqu"></script>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v9.0" nonce="HAqYibD7"></script>
+        </head>
+        <body>
+
+    <!-- header start from here -->
+        <div class="header1">
+            <div id="logo" class="header1">
+                <h1>Logbook</h1>
+            </div>
+            <div id="searcharea" class="header1">
+                <input type="text" placeholder="search here" id="searchbox">
+            </div>
+            <div id="profilearea" class="header1">
+                <a href="{{request.session.email}}">
+                    <img src="{% static '/img/profile.png' %}" id="profilepic">
+                    <span>{{request.session.email}}</span>
+                </a>
+            </div>
+            <div id="profilearea1" class="header1">
+                <a href="">Profile</a>
+            </div>
+
+            <div id="profilearea2" class="header1">|</div>
+
+            <div id="homearea" class="header1">
+                <a href="{% url 'home' %}">Home</a>
+            </div>
+
+            <div id="friendarea" class="header1">
+                <a href="">
+                    <img src="{% static '/img/frd.png' %}" id="friendpic">
+                </a>
+            </div>
+
+            <div id="chatarea" class="header1">
+                <a href="">
+                    <img src="{% static '/img/chat.png' %}" id="chatpic">
+                </a>
+            </div>
+
+            <div id="bellarea" class="header1">
+                <a href="">
+                    <img src="{% static '/img/bell.png' %}" id="bellpic">
+                </a>
+            </div>
+
+            <div id="setarea2" class="header1">|</div>
+
+            <div id="setarea" class="header1">
+                <a href="">
+                    <img src="{% static '/img/settings.png' %}" id="setpic">
+                </a>
+            </div>
+
+            <div id="logoutarea" class="header1">
+                <a href="{% url 'logout' %}">
+                    <img src="{% static '/img/logout.png' %}" id="logpic">
+                </a>
+            </div>
+
+            <div id="resetarea" class="header1">
+                <a href="/change/{{ employee.id }}">
+                    <img src="{% static '/img/reset.png' %}" id="resetpic">
+                </a>
+            </div>
+
+        </div>    <!--- main email call here --->
+
+    <!-- header end here -->
+
+        </body>
+
+<!-- End Login Profile Page -->
+
+<!-- Start Home Page For link of Registration and Login -->
+
+        {% else %}
+        <head>
+            {% load static %}
+            <style>
+                @import url('https://fonts.googleapis.com/css?family=Robot:300,400,500,700,900display=swap');
+                * {
+                    padding: 0px;
+                    margin: 0px;
+                    box-sizing: border-box;
+                }
+
+                body {
+                    position: absolute;
+                    width: 100%;
+                    min-height: 100%;
+                }
+
+                header {
+                    background: #415e9b;
+                    height: 25%;
+                    border-bottom: 1px solid #133783;
+                }
+
+                header .logo {
+                    color: #fff;
+                    font-size: 28px;
+                    margin-left: 12%;
+                    padding-top: 15px;
+                    position: absolute;
+                }
+
+                header .link {
+                    color: #fff;
+                    font-size: 24px;
+                    text-align: right;
+                    padding-top: 40px;
+                    padding-right: 40px;
+                    word-spacing: 5px;
+                }
+
+                .link a {
+                    text-decoration: none;
+                    color: #000;
+                }
+
+                .main {
+                    position: absolute;
+                    overflow: hidden;
+                    display: flex;
+                    width: 100%;
+                    min-height: 90vh;
+                    background: #e80202;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .container {
+                    position: absolute;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+
+                h1 {
+                    color: #fff;
+                    text-align: center;
+                    font-size: 8vw;
+                    line-height: 1em;
+                    z-index: 1000;
+                    font-weight: 900;
+                }
+
+                h1 span {
+                    font-size: 0.3em;
+                    letter-spacing: 0.2em;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                }
+
+                .block {
+                    position: absolute;
+                    width: 50px;
+                    height: 100px;
+                    background: #e80202;
+                    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2)
+                }
+            </style>
+        </head>
+
+        <header>
+            <div class="header-block">
+                <div class="logo">
+                    <h2>Logbook</h2>
+                </div>
+                <div class="link">
+                    <div>
+                        Login Connectivity :
+                        <a href="{% url 'reg' %}">Registration</a> &nbsp; &nbsp;
+                        <a href="{% url 'log' %}">Login</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <div class="container">
+                <h1><span>Welcome to</span><br>LogBook</h1>
+            </div>
+
+            <script src="{% static '/js/anime.min.js' %}"></script>
+            <script>
+                const container = document.querySelector('.container')
+                for (var i =0; i<=40; i++){
+                    const blocks = document.createElement('div');
+                    blocks.classList.add('block');
+                    container.appendChild(blocks);
+                }
+
+                function animateBlocks(){
+                    anime({
+                        targets: '.block',
+                        translateX: function(){
+                            return anime.random(-700, 700);
+                        },
+                        translateY: function(){
+                            return anime.random(-500, 500);
+                        },
+                        scale: function(){
+                            return anime.random(1,5);
+                        },
+
+                        easing: 'linear',
+                        duration: 1000,
+                        delay: anime.stagger(10),
+                        complete: animateBlocks,
+                    })
+                }
+
+                animateBlocks()
+            </script>
+        </div>
+        {% endif %}
+    </form>
+</body>
+</html>

@@ -1,0 +1,202 @@
+{% extends 'base.html' %}
+
+{% block head %}
+    {% load static %}
+    <title>Register</title>
+    <link href="{% static '/css/style.css' %}" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Robot:300,400,500,700,900display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    position: absolute;
+    width: 100%;
+    min-height: 90vh;
+}
+
+header {
+    background: #415e9b;
+    height: 10%;
+    border-bottom: 1px solid #133783;
+}
+
+header .logo {
+    color: #fff;
+    font-size: 28px;
+    margin-left: 5%;
+    padding-top: 10px;
+    position: absolute;
+}
+
+header .link {
+    color: #fff;
+    font-size: 24px;
+    text-align: right;
+    padding-top: 28px;
+    padding-right: 40px;
+    word-spacing: 5px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #000;
+}
+</style>
+<style>
+    body .container {
+        width: 100%;
+        height: 90vh;
+        display: table;
+        text-align: center;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .container .header {
+        width: 50%;
+        flex: 50%;
+        text-align: center;
+        margin-left: 30%;
+        color: Brawn;
+        background-image: linear-gradient(to right, green 0%, #854fee 100%);
+        border-radius: 20px;
+        box-sizing: border-box;
+    }
+
+    .header h1 {
+        text-transform: uppercase;
+        font-size: 2.3rem;
+        animation: aagepiche 2s linear infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes aagepiche {
+        from{ padding-left: 70px; }
+        to{ padding-right: 70px;}
+    }
+
+    .container .main {
+        width: 50%;
+        margin: 2% 30%;
+        padding: 10px 15px;
+        word-spacing: 8px;
+        color: #000;
+        font-weight: 900;
+        font-size: 20px;
+        text-align: left;
+        display:
+        border: double 2px #4458dc;
+        background-color: yellow;
+        border-radius: 70px;
+
+    }
+
+    .main .form {
+        border: double 2px linear-gradient(to right, #4458dc 0%, lightblue 100%);
+        background-image: linear-gradient(to right, #4458dc 0%, lightblue 100%);
+        border-radius: 20% 70% 70% 15% / 40% 40% 90% 90%;
+        padding: 40px;
+    }
+
+    .form .text-box {
+        color: green;
+        padding: 5px;
+        margin: 0px 10px;
+        border: double 2px lightyellow;
+        background-color: lightyellow;
+        border-radius: 10px;
+    }
+
+    .form .error {
+        text-align: right;
+        color: red;
+        position: right;
+    }
+
+    .form .btn {
+        text-decoration: none;         /* it is use for avoid default decoration properties */
+        text-transform: uppercase;
+        text-align: center;
+        font-weight: 900;
+        font-size: 18px;
+        padding: 8px 20px;
+        cursor: pointer;
+        margin-left: 10px;
+        margin-right: 50px;
+        margin-bottom: -50px;
+        border-radius: 10px;
+        display: inline-block;
+        border: double 2px transparent;
+        letter-spacing: 0;
+        color: #fff;     /* it is a black color code */
+        background-image: linear-gradient(to right, lightgreen 0%, violet 100%);
+    }
+
+    .form .btn:hover {
+        border: double 2px #4458dc;
+        color: #222;
+        background-image: none;
+        background-color: #fff;
+    }
+</style>
+{% endblock head %}
+
+{% block content %}
+    <div class="container">
+        <div class="header">
+            <h1>Register Data</h1>
+        </div>
+        <div class="main">
+            <form method="POST" action="" class="form">
+                {% csrf_token %}
+                <div>
+                    <label class="name">Name</label>
+                    <input type="text" name="name" placeholder="Name" class="text-box" required>
+                </div>
+                    <span class="error">{{ error }}</span>
+                <br>
+
+                <div>
+                    <label class="name">Email</label>
+                    <input type="text" name="email" placeholder="Email" class="text-box" required>
+                </div>
+                    <span class="error">{{ error1 }}</span>
+                <br>
+
+                <div>
+                    <label class="name">Contact</label>
+                    <input type="number" name="contact" placeholder="Mobile Number" class="text-box" required>
+                </div>
+                    <span class="error">{{ error2 }}</span>
+                <br>
+
+                <div>
+                    <label class="name">Password</label>
+                    <input type="password" name="password" placeholder="Password" class="text-box" required>
+                </div>
+                    <span class="error">{{ error3 }}</span>
+                <br>
+                <div>
+                    <label class="name">Confirm Password</label>
+                    <input type="password" name="re_password" placeholder="Password" class="text-box" required>
+                </div>
+                <br>
+
+                <div>
+                    <button type="submit" class="btn">Register</button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% if messages %}
+    {% for msg in messages %}
+        <b>{{msg}}</b>
+    {% endfor %}
+{% endif %}
+
+{% endblock content %}

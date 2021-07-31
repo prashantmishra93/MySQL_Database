@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>User Login Data</title>
+    <link href="{% static '/css/loginstyle.css' %}" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- header start here -->
+    <header>
+        <div class="header-block">
+            <div class="logo">
+                <h2>Logbook</h2>
+            </div>
+            <div class="link">
+                <div>
+                    Login Connectivity :
+                    <a href="{% url 'reg' %}">Registration</a> &nbsp; &nbsp;
+                    <a href="{% url 'home' %}">Home</a>
+                    <a href="{% url 'show' %}">Show</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header end here -->
+
+    <!-- container start here -->
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1>Login Data</h1>
+            </div>
+        </div>
+        <div class="main">
+            <form method="POST" class="form" action="">
+                {% csrf_token %}
+
+                <div>
+                    <label class="name">Email:</label>
+                    <div class="col-sm-4">
+                        <input type="text" name="email" class="text-box" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="name">Password:</label>
+                    <div class="col-sm-4">
+                        <input type="password" name="password" class="text-box" required>
+                    </div>
+                </div>
+                <br>
+
+                <div>
+                    <button type="submit" class="btn">Login</button>
+                </div>
+                <br>
+                <hr>
+                <a href="/reset/{{ employee.id }}"><span class="glyphicon glyphicon-pencil" >forget password.?</span></a>
+
+
+                {% if messages %}
+                    {% for msg in messages %}
+                        <b>{{msg}}</b>
+                    {% endfor %}
+                {% endif %}
+            </form>
+        </div>
+    <!-- Animation div -->
+        <div class="highway"></div>
+        <div class="city"></div>
+        <div class="car">
+            <img src="{% static '/img/car.png'%}">
+        </div>
+        <div class="wheel">
+            <img src="{% static '/img/wheel.png'%}" class="front-wheel">
+            <img src="{% static '/img/wheel.png'%}" class="back-wheel">
+        </div>
+
+        <div class="car1">
+            <img src="{% static '/img/car.png'%}">
+        </div>
+        <div class="wheel1">
+            <img src="{% static '/img/wheel.png'%}" class="front-wheel">
+            <img src="{% static '/img/wheel.png'%}" class="back-wheel">
+        </div>
+    </div>
+    <!-- container end here -->
+</body>
+</html>
